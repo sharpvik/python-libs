@@ -10,8 +10,10 @@
 
 
 
-# --> insertion sort
-def insertion(array):
+# functions
+
+## --> insertion sort
+def insertion(array):                                   # array(list) -- unsorted list of numbers; --> function returns a sorted list of numbers
     def insert(initial_position, array, position):
         array[position + 1:] = array[position:]
         array[position] = array[initial_position + 1]
@@ -27,12 +29,12 @@ def insertion(array):
                     insert(a, array, b + 1)
                 break
     return array
-# insertion sort <--
+## insertion sort <--
 
 
 
-# --> merge sort
-def merge(left, right):
+## --> merge sort
+def merge_arrays(left, right):                      # *** internal use ***
     output = []
 
     while len(left) != 0 or len(right) != 0:
@@ -57,12 +59,12 @@ def merge(left, right):
 
     return output
 
-def run(array):
+def merge(array):                                   # array(list) -- unsorted list of numbers; --> function returns a sorted list of numbers
     if len(array) == 1:
         return array
     else:
         middle = len(array) // 2
         left_half = array[:middle]
         right_half = array[middle:]
-        return merge(run(left_half), run(right_half))
-# merge sort <--
+        return merge_arrays(merge(left_half), merge(right_half))
+## merge sort <--
