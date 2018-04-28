@@ -59,7 +59,7 @@ def merge_arrays(left, right):                      # *** internal use ***
 
     return output
 
-def merge(array):                                   # array(list) -- unsorted list of numbers; --> function returns sorted list of numbers;
+def merge(array):       # array(list) -- unsorted list of numbers; --> function returns sorted list of numbers;
     if len(array) == 1:
         return array
     else:
