@@ -60,8 +60,9 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### sort.py
 
-+ *insertion* --> returns sorted array;
-+ *merge* --> returns sorted array;
++ *insertion* --> returns sorted list of numbers;
++ *merge* --> returns sorted list of numbers;
++ *bubble* --> returns sorted list of numbers;
 
 ### stringX.py
 

@@ -68,3 +68,27 @@ def merge(array):                                   # array(list) -- unsorted li
         right_half = array[middle:]
         return merge_arrays(merge(left_half), merge(right_half))
 ## merge sort <--
+
+
+
+## --> bubble sort
+def bubble(array):      # array(list) -- unsorted list of numbers; --> function returns sorted list of numbers;
+    
+    def swap(a, b):     # *** internal use ***
+        array[a], array[b] = array[b], array[a]
+    
+    is_sorted = False
+    
+    while not is_sorted:
+        swaps_count = 0
+
+        for i in range(0, len(array) - 1):
+            if array[i] > array[i + 1]:
+                swap(i, i + 1)
+                swaps_count += 1
+        
+        if swaps_count == 0:
+            is_sorted = True
+
+    return array
+## bubble sort <-- 

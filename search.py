@@ -11,6 +11,8 @@
 
 
 # functions 
+
+## --> binary search
 def binary(array, element):     # array(list) -- list of numbers; element(int / float) -- number you are searching for;
                                 # --> function returns index of element if found, ohterwise returns -1;
 
@@ -34,9 +36,11 @@ def binary(array, element):     # array(list) -- list of numbers; element(int / 
         if low == high and element == array[low]:
             index = low
         return index
+## binary search <--
 
 
 
+## --> linear search
 def linear(array, element, count=1):    # array(list) -- any list; element(any type) -- element you are searching for; 
                                         # count(int) -- number of indexes saved before returning the answer;
     indexes = []
@@ -53,3 +57,4 @@ def linear(array, element, count=1):    # array(list) -- any list; element(any t
         return indexes[0]
     else:
         return indexes
+## linear search <--
