@@ -13,7 +13,7 @@
 # functions
 
 ## --> insertion sort
-def insertion(array):                                   # array(list) -- unsorted list of numbers; --> function returns a sorted list of numbers
+def insertion(array):                                   # array(list) -- unsorted list of numbers; --> function returns sorted list of numbers;
     def insert(initial_position, array, position):
         array[position + 1:] = array[position:]
         array[position] = array[initial_position + 1]
@@ -59,7 +59,7 @@ def merge_arrays(left, right):                      # *** internal use ***
 
     return output
 
-def merge(array):                                   # array(list) -- unsorted list of numbers; --> function returns a sorted list of numbers
+def merge(array):                                   # array(list) -- unsorted list of numbers; --> function returns sorted list of numbers;
     if len(array) == 1:
         return array
     else:

@@ -11,18 +11,16 @@
 
 
 # functions 
-def binary(array, element):     # array(list) -- list of numbers; element(int / float) -- number you want to search for;
-                                # --> function returns the index of element if found, ohterwise returns -1
+def binary(array, element):     # array(list) -- list of numbers; element(int / float) -- number you are searching for;
+                                # --> function returns index of element if found, ohterwise returns -1;
 
-    array.sort()                # sort the array just in case
+    array.sort()                # sort the array just in case;
 
-    # variables
-    low = 0                     # low(int) -- lowest searching limit
-    high = len(array) - 1       # high(int) -- highest searching limit
-    index = -1                  # index(int) -- index of the element if found, otherwise = -1
-    position = high // 2        # position(int) -- the index we're testing
+    low = 0                     # low(int) -- lowest searching limit;
+    high = len(array) - 1       # high(int) -- highest searching limit;
+    index = -1                  # index(int) -- index of the element if found, otherwise = -1;
+    position = high // 2        # position(int) -- the index we're testing;
     
-    # body
     while low < high:
         if element == array[position]:
             index = position

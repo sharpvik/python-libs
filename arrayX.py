@@ -17,8 +17,7 @@ from random import randint
 
 # functions
 def unsorted(length, low, high):        # length(int) -- number of elements you want to get; low(int) and high(int) -- limits for the generation of numeric elements; 
-                                        # --> function returns an unsorted list of numbers
-                                    
+                                        # --> function returns unsorted list of numbers;
     array = []
     for i in range(0, length):
         array.append(randint(low, high))

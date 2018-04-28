@@ -11,7 +11,7 @@
 
 
 # functions
-def factorial(n):   # n(int) -- any positive number; --> function returns n!
+def factorial(n):   # n(int) -- any positive number; --> function returns n!;
     if n > 1:
         return factorial(n - 1) * n
     else:
@@ -19,10 +19,10 @@ def factorial(n):   # n(int) -- any positive number; --> function returns n!
 
 
 
-def nPr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns the number of permutations of n elements for r positions 
+def nPr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns number of permutations of n elements for r positions;
     return int(factorial(n) / factorial(n - r))
 
 
 
-def nCr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns the number of combinations of n elements for r positions
+def nCr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns number of combinations of n elements for r positions;
     return int(factorial(n) / (factorial(n - r) * factorial(r)))
