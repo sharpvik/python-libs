@@ -65,3 +65,12 @@ Here I will list all the files, functions inside them and their purposes so that
 ### stringX.py
 
 + *reverse* --> returns reversed string;
+
+## Contact
+
+For any personal or business enquiries:
+
++ Email: *sharp.vik@gmail.com*
++ [Twitter](https://twitter.com/sharp_vik)
++ [VK](https://vk.com/perigrinus)
++ [Instagram](https://www.instagram.com/viktooooor) 
