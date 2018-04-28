@@ -25,7 +25,6 @@ def binary(array, element):     # array(list) -- list of numbers; element(int / 
         if element == array[position]:
             index = position
             return index
-            break
         elif element < array[position]:
             high = position - 1
         else:
@@ -35,3 +34,22 @@ def binary(array, element):     # array(list) -- list of numbers; element(int / 
         if low == high and element == array[low]:
             index = low
         return index
+
+
+
+def linear(array, element, count=1):    # array(list) -- any list; element(any type) -- element you are searching for; 
+                                        # count(int) -- number of indexes saved before returning the answer;
+    indexes = []
+    i = 0
+
+    while i < len(array) and len(indexes) < count:
+        if array[i] == element:
+            indexes.append(i)
+        i += 1
+        
+    if len(indexes) == 0:
+        return -1
+    elif len(indexes) == 1:
+        return indexes[0]
+    else:
+        return indexes

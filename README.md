@@ -56,6 +56,7 @@ Here I will list all the files, functions inside them and their purposes so that
 ### search.py
 
 + *binary* --> returns index of the element in a given list if found, otherwise returns -1;
++ *linear* --> returns index(s) of the element in a given list if found, otherwise returns -1;
 
 ### sort.py
 
