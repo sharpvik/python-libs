@@ -47,6 +47,10 @@ Here I will list all the files, functions inside them and their purposes so that
 
 + *find* --> returns (a) list of divisors; (b) number of divisors; (c) sum of divisors of a given number;
 
+### mathX.py
+
++ *power* --> return given number to the given positive power > 1;
+
 ### primes.py
 
 + *check* --> returns True if number is prime, otherwise returns False;

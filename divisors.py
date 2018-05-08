@@ -16,6 +16,7 @@ import math
 
 
 # functions
+
 def find(n, include=False, output_format="*"):      # n(int) -- any positive number; 
                                                     # include(bool, default=False) -- give True to include n as its own divisor;
                                                     # output_format(str, default="*") -- give "#" --> function returns number of divisors;
