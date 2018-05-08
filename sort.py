@@ -19,7 +19,7 @@ def insertion(array):                                   # array(list) -- unsorte
         array[position] = array[initial_position + 1]
         array.pop(initial_position + 1)
 
-    for a in range(1, len(array)):
+    for a in range( 1, len(array) ):
         for b in range(0, a):
             if b == 0 and array[a] <= array[b]:
                 insert(a, array, b)
@@ -66,7 +66,7 @@ def merge(array):       # array(list) -- unsorted list of numbers; --> function 
         middle = len(array) // 2
         left_half = array[:middle]
         right_half = array[middle:]
-        return merge_arrays(merge(left_half), merge(right_half))
+        return merge_arrays( merge(left_half), merge(right_half) )
 ## merge sort <--
 
 

@@ -20,5 +20,5 @@ def unsorted(length, low, high):        # length(int) -- number of elements you 
                                         # --> function returns unsorted list of numbers;
     array = []
     for i in range(0, length):
-        array.append(randint(low, high))
+        array.append( randint(low, high) )
     return array

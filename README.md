@@ -41,6 +41,7 @@ Here I will list all the files, functions inside them and their purposes so that
 + *factorial* --> returns factorial (n!) of given number;
 + *nPr* --> returns number of permutations of n elements for r positions;
 + *nCr* --> returns number of combinations of n elements for r positions;
++ *anagram* --> returns list of every possible arrangement of a given string;
 
 ### divisors.py
 
