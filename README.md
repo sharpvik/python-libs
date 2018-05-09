@@ -32,10 +32,6 @@ reverse("Hello, world!")
 
 Here I will list all the files, functions inside them and their purposes so that you can know what they contain without having to actually look through each and every file. Filenames I will put in **bold**, functions will be *cursive*.
 
-### arrayX.py
-
-+ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
-
 ### combinatorics.py
 
 + *factorial* --> returns factorial (n!) of given number;
@@ -46,6 +42,11 @@ Here I will list all the files, functions inside them and their purposes so that
 ### divisors.py
 
 + *find* --> returns (a) list of divisors; (b) number of divisors; (c) sum of divisors of a given number;
+
+### arrayX.py
+
++ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
++ *present_in* --> returns True if element is present in the list given, otherwise returns False;
 
 ### mathX.py
 

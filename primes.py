@@ -26,7 +26,6 @@ def check(n):                           # n(int) -- any positive number; --> fun
         while a <= int( sqrt(n) ) + 1:  # check if n is divisible by any number >= 2 and <= its square root; 
                 if n % a == 0: 
                     return False        # and if yes --> False;
-                    break               # kill the loop;
                 else:
                     a += 1 
         else:
