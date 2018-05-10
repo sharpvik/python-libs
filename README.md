@@ -30,21 +30,31 @@ reverse("Hello, world!")
 
 ## Dictionary
 
-Here I will list all the files, functions inside them and their purposes so that you can know what they contain without having to actually look through each and every file. Filenames I will put in **bold**, functions will be *cursive*.
-
-### arrayX.py
-
-+ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
+Here I will list all the files, functions inside them and their purposes so that you can know what they contain without having to actually look through each and every file. Filenames I will put in **bold**, functions and classes will be *cursive*.
 
 ### combinatorics.py
 
 + *factorial* --> returns factorial (n!) of given number;
 + *nPr* --> returns number of permutations of n elements for r positions;
 + *nCr* --> returns number of combinations of n elements for r positions;
++ *anagram* --> returns list of every possible arrangement of a given string;
 
 ### divisors.py
 
 + *find* --> returns (a) list of divisors; (b) number of divisors; (c) sum of divisors of a given number;
+
+### graphC.py
+
++ *class Graph* --> class that may be used to create and interract with graphs;
+
+### listD.py
+
++ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
++ *present_in* --> returns True if element is present in the list given, otherwise returns False;
+
+### mathL.py
+
++ *power* --> return given number to the given positive power > 1;
 
 ### primes.py
 
@@ -64,7 +74,7 @@ Here I will list all the files, functions inside them and their purposes so that
 + *merge* --> returns sorted list of numbers;
 + *bubble* --> returns sorted list of numbers;
 
-### stringX.py
+### stringD.py
 
 + *reverse* --> returns reversed string;
 

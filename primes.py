@@ -23,10 +23,9 @@ def check(n):                           # n(int) -- any positive number; --> fun
     if n == a: return True              # if n = 2 --> True;
     elif n < a: return False            # if n < 2 --> False;
     else:                               # if n is different --> do;
-        while a <= int(sqrt(n)) + 1:    # check if n is divisible by any number >= 2 and <= its square root; 
+        while a <= int( sqrt(n) ) + 1:  # check if n is divisible by any number >= 2 and <= its square root; 
                 if n % a == 0: 
                     return False        # and if yes --> False;
-                    break               # kill the loop;
                 else:
                     a += 1 
         else:
@@ -63,7 +62,7 @@ def find_distincts(n, output_format="*"):                                       
                                                                                 # output_format(str, default="*") -- give "#" --> function returns number of distinct prime divisors;
                                                                                 #                                 -- don't give anything --> function returns list of distinct prime divisors;
 
-    primes = find(int(sqrt(n) + 1))                                             # now we've got all the primes that could possibly be divisors of n;
+    primes = find( int( sqrt(n) + 1 ) )                                         # now we've got all the primes that could possibly be divisors of n;
     distincts = []
     num_to_test = n
     i = 0
@@ -75,7 +74,7 @@ def find_distincts(n, output_format="*"):                                       
         else:
             i += 1                                                              # if the current prime in primes in not a divisor of the num_to_test we go to the next one;
     else: 
-        if num_to_test not in distincts: distincts.append(int(num_to_test))     # when num_to_test becomes prime itself we put it into the distincts list if it is not already there;
+        if num_to_test not in distincts: distincts.append( int(num_to_test) )   # when num_to_test becomes prime itself we put it into the distincts list if it is not already there;
     
     if output_format == "#":
         return len(distincts)
@@ -88,7 +87,7 @@ def find_distincts(n, output_format="*"):                                       
 ## --> find prime factors
 def find_prime_factors(n):                          # n(int) -- any positive number; --> function returns list of prime factors of n;
 
-    primes = find(int(sqrt(n) + 1))                 # now we've got all the primes that could possibly be divisors of n;
+    primes = find( int( sqrt(n) + 1 ) )             # now we've got all the primes that could possibly be divisors of n;
     prime_factors = []
     num_to_test = n
     i = 0
@@ -100,6 +99,6 @@ def find_prime_factors(n):                          # n(int) -- any positive num
         else:
             i += 1                                  # if the current prime in primes in not a divisor of the num_to_test we go to the next one;
     else: 
-        prime_factors.append(int(num_to_test))      # when num_to_test becomes prime itself we put it into the prime_factors;
+        prime_factors.append( int(num_to_test) )    # when num_to_test becomes prime itself we put it into the prime_factors;
     return prime_factors
 ## find prime factors <--

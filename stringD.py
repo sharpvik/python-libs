@@ -11,8 +11,9 @@
 
 
 # functions
+
 def reverse(string):        # string(str) -- any string; --> function returns reversed string;
-    output = []
-    for i in range(len(string) - 1, -1, -1):
-        output.append(string[i])
-    return ''.join(output)
+    if len(string) == 1:
+        return string
+    else:
+        return reverse(string[1:]) + string[0]
