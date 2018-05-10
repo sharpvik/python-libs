@@ -29,7 +29,9 @@ def unsorted(length, low, high):        # length(int) -- number of elements you 
 
 
 # --> present_in function
-def present_in(array, element):
+def present_in(array, element):         # array(list) -- list that we want to check for presence of element;
+                                        # element(any datatype) -- element we want to check for presence in array;
+                                        # --> function returns True if element is in array, otherwise, returns False;
     for each in array:
         if element == each:
             return True

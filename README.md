@@ -54,7 +54,8 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### mathL.py
 
-+ *power* --> return given number to the given positive power > 1;
++ *power* --> returns given number to the given positive power > 1;
++ *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
 
 ### primes.py
 
