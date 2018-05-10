@@ -12,31 +12,31 @@
 
 # functions
 
-# --> factorial function
+## --> factorial function
 def factorial(n):   # n(int) -- any positive number; --> function returns n!;
     if n > 1:
         return factorial(n - 1) * n
     else:
         return 1
-# factorial function <--
+## factorial function <--
 
 
 
-# --> nPr function
+## --> nPr function
 def nPr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns number of permutations of n elements for r positions;
     return int( factorial(n) / factorial(n - r) )
-# nPr function <--
+## nPr function <--
 
 
 
-# --> nCr function
+## --> nCr function
 def nCr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns number of combinations of n elements for r positions;
     return int( factorial(n) / ( factorial(n - r) * factorial(r) ) )
-# nCr function <--
+## nCr function <--
 
 
 
-# --> anagrams function
+## --> anagrams function
 def anagram(string):        # string(str) -- any string; --> function returns list of every possible arrangement of string;
     if len(string) == 0:
         return [string]
@@ -46,4 +46,4 @@ def anagram(string):        # string(str) -- any string; --> function returns li
             for position in range( 0, len(word) + 1 ):
                 anagrams.append(word[:position] + string[0] + word[position:])
         return anagrams
-# anagrams function <--
+## anagrams function <--

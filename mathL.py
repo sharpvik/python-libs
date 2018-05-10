@@ -12,7 +12,7 @@
 
 # functions
 
-# --> power function
+## --> power function
 def power(n, p):            # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
     if p == 0:
         return 1
@@ -22,11 +22,11 @@ def power(n, p):            # n(int / float) -- any number; p(int) -- power of y
         return n * n
     else:
         return pow(n, p // 2) * pow(n, p - p // 2)
-# power function <--
+## power function <--
 
 
 
-# --> fibonacci function
+## --> fibonacci function
 def fibonacci(index):       # index(int) -- position of number in fibonacci sequence that you want to find;
                             # --> function returns fibonacci number with given index if index is positive;
                             # --> otherwise returns -1
@@ -36,4 +36,4 @@ def fibonacci(index):       # index(int) -- position of number in fibonacci sequ
         return 1
     else:
         return fibonacci(index - 1) + fibonacci(index - 2)
-# fibonacci function <--
+## fibonacci function <--

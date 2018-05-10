@@ -17,18 +17,18 @@ from random import randint
 
 # functions
 
-# --> unsorted function
+## --> unsorted function
 def unsorted(length, low, high):        # length(int) -- number of elements you want to get; low(int) and high(int) -- limits for the generation of numeric elements; 
                                         # --> function returns unsorted list of numbers;
     array = []
     for i in range(0, length):
         array.append( randint(low, high) )
     return array
-# unsorted function <--
+## unsorted function <--
 
 
 
-# --> present_in function
+## --> present_in function
 def present_in(array, element):         # array(list) -- list that we want to check for presence of element;
                                         # element(any datatype) -- element we want to check for presence in array;
                                         # --> function returns True if element is in array, otherwise, returns False;
@@ -37,4 +37,4 @@ def present_in(array, element):         # array(list) -- list that we want to ch
             return True
     else:
         return False
-# present_in funciton <--
+## present_in funciton <--
