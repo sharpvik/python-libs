@@ -64,6 +64,10 @@ Here I will list all the files, functions inside them and their purposes so that
 + *find_distincts* --> returns (a) list of distinct prime divisors; (b) sum of distinct prime divisors of a given number;
 + *find_prime_factors* --> returns list of prime factors of n;
 
+### queueD.py
+
++ *class Queue* --> implementation of Queue datatype;
+
 ### search.py
 
 + *binary* --> returns index of the element in a given list if found, otherwise returns -1;
@@ -74,6 +78,10 @@ Here I will list all the files, functions inside them and their purposes so that
 + *insertion* --> returns sorted list of numbers;
 + *merge* --> returns sorted list of numbers;
 + *bubble* --> returns sorted list of numbers;
+
+### stackD.py
+
++ *class Stack* --> implementation of Stack datatype;
 
 ### stringD.py
 

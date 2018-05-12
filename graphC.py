@@ -43,7 +43,7 @@ class Graph:                                            # undirected graph; no v
     ## --> breadth first search using class Queue
     def bfs( self, final, queue=Queue(None), checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
                                                                     # queue(class Queue) -- Queue containing the element you are beginning with (format: element);
-                                                                    # checked(list) -- leave empty *** internal use ***;
+                                                                    # checked(list) -- leave empty unless you want to specifically prevent certain nodes from being checked *** internal use ***;
                                                                     # --> function returns True if the two nodes are connected, otherwise it returns False;
         if queue.length() == 0:
             return False
@@ -61,7 +61,7 @@ class Graph:                                            # undirected graph; no v
     ## --> depth first serach using class Stack
     def dfs( self, final, stack=Stack(None), checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
                                                                     # stack(class Stack) -- Stack containing the element you are beginning with (format: element);
-                                                                    # checked(list) -- leave empty *** internal use ***;
+                                                                    # checked(list) -- leave empty unless you want to specifically prevent certain nodes from being checked *** internal use ***;
                                                                     # --> function returns True if the two nodes are connected, otherwise it returns False;
         if stack.length() == 0:
             return False
