@@ -45,7 +45,7 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### graphC.py
 
-+ *class Graph* --> class that may be used to create and interract with graphs;
++ *class Graph* --> class that may be used to create and interract with undirected graphs where edges don't have values (every edge is as good a path as any other edge);
 
 ### listD.py
 

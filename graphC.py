@@ -1,4 +1,4 @@
-class Graph:
+class Graph:                                            # undirected graph; no values for the edges;
     def __init__(self):
         self.nodes_counter = 0
         self.nodes_dict = dict()
