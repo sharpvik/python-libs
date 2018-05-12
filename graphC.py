@@ -1,18 +1,15 @@
 class Graph:                                            # undirected graph; no values for the edges;
     def __init__(self):
-        self.nodes_counter = 0
         self.nodes_dict = dict()
 
     def node_add(self, name):                           # name(int / str) -- name of the node;
         self.nodes_dict.update( { name : list() } )
-        self.nodes_counter += 1
         return name
 
     def node_del(self, name):                           # name(int / str) -- name of the node;
         self.nodes_dict.pop(name, None)
         for each in self.nodes_dict:
             self.nodes_dict[each].remove(name)
-        self.nodes_counter -= 1
         return name
 
     def connection_add(self, one, two):                 # one(int / str) and two(int / str) -- two nodes you want to connect;
@@ -26,7 +23,7 @@ class Graph:                                            # undirected graph; no v
         return [one, two]
 
     def nodes_count(self):                              # --> function returns the number of nodes in the graph;
-        return self.nodes_counter
+        return len(self.nodes_dict)
 
     def nodes_return(self):                             # --> function returns the whole dict containing nodes and their connections;
         return self.nodes_dict
