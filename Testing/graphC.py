@@ -1,3 +1,6 @@
+from stackD import Stack
+from queueD import Queue
+
 class Graph:                                            # undirected graph; no values for the edges;
     def __init__(self):
         self.nodes_counter = 0
@@ -36,41 +39,39 @@ class Graph:                                            # undirected graph; no v
         return self.nodes_dict[name]
 
     # search
-    
-    ## --> breadth first search
-    def bfs( self, final, queue, checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
-                                                        # queue(list) -- list containing the element you are beginning with (format: [initial]);
-                                                        # checked(list) -- leave empty *** internal use ***;
-                                                        # --> function returns True if the two nodes are connected, otherwise it returns False;
-        if len(queue) == 0:
+
+    ## --> breadth first search using class Queue
+    def bfs( self, final, queue=Queue(None), checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
+                                                                    # queue(class Queue) -- Queue containing the element you are beginning with (format: element);
+                                                                    # checked(list) -- leave empty *** internal use ***;
+                                                                    # --> function returns True if the two nodes are connected, otherwise it returns False;
+        if queue.length() == 0:
             return False
-        if queue[0] == final:
+        temp = queue.pop()
+        if temp == final:
             return True
-        else:
-            temp = queue[0]
-            queue.pop(0)
+        else: 
             checked.append(temp)
             for child in self.node_return(temp):
                 if child not in checked:
-                    queue.insert(0, child)
+                    queue.ins(child)
             return self.bfs(final, queue, checked)
-    ## breadth first search <--
+    ## breadth first search using class Queue <--
 
-    ## --> deapth first search
-    def dfs( self, final, stack, checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
-                                                        # stack(list) -- list containing the element you are beginning with (format: [initial]);
-                                                        # checked(list) -- leave empty *** internal use ***;
-                                                        # --> function returns True if the two nodes are connected, otherwise it returns False;
-        if len(stack) == 0:
+    ## --> depth first serach using class Stack
+    def dfs( self, final, stack=Stack(None), checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
+                                                                    # stack(class Stack) -- Stack containing the element you are beginning with (format: element);
+                                                                    # checked(list) -- leave empty *** internal use ***;
+                                                                    # --> function returns True if the two nodes are connected, otherwise it returns False;
+        if stack.length() == 0:
             return False
-        if stack[-1] == final:
+        temp = stack.pop()
+        if temp == final:
             return True
         else:
-            temp = stack[-1]
-            stack.pop(-1)
             checked.append(temp)
             for child in self.node_return(temp):
-                if child not in checked:    
-                    stack.append(child)
+                if child not in checked:
+                    stack.add(child)
             return self.dfs(final, stack, checked)
-    ## deapth first search <--
+    ## depth first serach using class Stack <--
