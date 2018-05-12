@@ -38,13 +38,27 @@ class Graph:                                            # undirected graph; no v
     # search
     
     ## --> breadth first search
-    def bfs(self, initial, final):
-        pass
+    def bfs( self, final, queue, checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
+                                                        # queue(list) -- list containing the element you are beginning with (format: [initial]);
+                                                        # checked(list) -- leave empty *** internal use ***;
+                                                        # --> function returns True if the two nodes are connected, otherwise it returns False;
+        if len(queue) == 0:
+            return False
+        if queue[0] == final:
+            return True
+        else:
+            temp = queue[0]
+            queue.pop(0)
+            checked.append(temp)
+            for child in self.node_return(temp):
+                if child not in checked:
+                    queue.insert(0, child)
+            return self.bfs(final, queue, checked)
     ## breadth first search <--
 
     ## --> deapth first search
-    def dfs( self, stack, final, checked=list() ):      # stack(list) -- list containing the element you are beginning with (format: [initial]);
-                                                        # final(int / str) -- name of the node you're trying to establish connection with;
+    def dfs( self, final, stack, checked=list() ):      # final(int / str) -- name of the node you're trying to establish connection with;
+                                                        # stack(list) -- list containing the element you are beginning with (format: [initial]);
                                                         # checked(list) -- leave empty *** internal use ***;
                                                         # --> function returns True if the two nodes are connected, otherwise it returns False;
         if len(stack) == 0:
