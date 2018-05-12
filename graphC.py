@@ -1,3 +1,6 @@
+from stackD import Stack
+from queueD import Queue
+
 class Graph:                                            # undirected graph; no values for the edges;
     def __init__(self):
         self.nodes_dict = dict()
@@ -71,3 +74,8 @@ class Graph:                                            # undirected graph; no v
                     stack.append(child)
             return self.dfs(final, stack, checked)
     ## deapth first search <--
+
+    ## --> breadth first serach using class Queue
+    def qbfs( self, final, queue=Queue(), checked=list() ):
+        pass
+    ## breadth first serach using class Queue <--
