@@ -55,7 +55,7 @@ class Graph:                                            # undirected graph; no v
             for child in self.node_return(temp):
                 if child not in checked:
                     queue.ins(child)
-            return self.bfs(final, queue, checked)
+            return self.bfs( final, queue, list(checked) )
     ## breadth first search using class Queue <--
 
     ## --> depth first serach using class Stack
@@ -73,5 +73,5 @@ class Graph:                                            # undirected graph; no v
             for child in self.node_return(temp):
                 if child not in checked:
                     stack.add(child)
-            return self.dfs(final, stack, checked)
+            return self.dfs( final, stack, list(checked) )
     ## depth first serach using class Stack <--
