@@ -15,20 +15,20 @@ g.connection_add(1, 4)      # connect nodes 1 to 4 but leave ...
 
 # search testing
 print("BFS for 1 and 2 # --> True")
-print( g.bfs(2, Queue(1) ), end="\n\n" )
+print( g.bfs( 2, Queue(1) ), end="\n\n" )
 
 print("BFS for 1 and 4 # --> True")
-print( g.bfs(4, Queue(1) ), end="\n\n" )
+print( g.bfs( 4, Queue(1) ), end="\n\n" )
 
 print("BFS for 1 and 5 # --> False")
-print( g.bfs(5, Queue(1) ), end="\n\n" )
+print( g.bfs( 5, Queue(1) ), end="\n\n" )
 
 
 print("DFS for 1 and 2 # --> True")
-print( g.dfs(2, Stack(1) ), end="\n\n" )
+print( g.dfs( 2, Stack(1) ), end="\n\n" )
 
 print("DFS for 1 and 4 # --> True")
-print( g.dfs(4, Stack(1) ), end="\n\n" )
+print( g.dfs( 4, Stack(1) ), end="\n\n" )
 
 print("DFS for 1 and 5 --> False")
-print( g.dfs(5, Stack(1) ), end="\n\n" )
+print( g.dfs( 5, Stack(1) ), end="\n\n" )
