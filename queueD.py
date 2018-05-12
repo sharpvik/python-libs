@@ -1,6 +1,9 @@
 class Queue:
-    def __init__(self):
-        self.storage = list()
+    def __init__(self, element):
+        if isinstance(element, list):
+            self.storage = element
+        else:
+            self.storage = [element]
 
     def ins(self, element):
         self.storage.insert(0, element)
