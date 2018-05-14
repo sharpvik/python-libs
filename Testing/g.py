@@ -1,5 +1,5 @@
 # imports
-from graphC import Graph
+from graphD import Graph
 from stackD import Stack
 from queueD import Queue
 

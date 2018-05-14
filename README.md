@@ -43,7 +43,7 @@ Here I will list all the files, functions inside them and their purposes so that
 
 + *find* --> returns (a) list of divisors; (b) number of divisors; (c) sum of divisors of a given number;
 
-### graphC.py
+### graphD.py
 
 + *class Graph* --> class that may be used to create and interract with undirected graphs where edges don't have values (every edge is as good a path as any other edge);
 
