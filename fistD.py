@@ -14,7 +14,7 @@ class Fist:                                             # final state machine wi
         self.states.update( {name : [zero, one]} )
         return name
     
-    def state_init(self, name):                         # name(int / str) -- name of state you want to set as initial state;
+    def state_init_set(self, name):                     # name(int / str) -- name of state you want to set as initial state;
                                                         # --> function returns name;
         self.state_current = name
         return name
