@@ -5,7 +5,7 @@ class Stack:                                # standard stack datatype;
         else:
             self.storage = [element]
         
-    def add(self, element):                 # element(int / str) -- element you want to add into the Stack;
+    def push(self, element):                 # element(int / str) -- element you want to add into the Stack;
                                             # --> function returns name of the added elment;
         self.storage.append(element)
         return element

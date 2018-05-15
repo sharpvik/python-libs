@@ -83,6 +83,6 @@ class Graph:                                            # undirected graph; no v
             _checked.append(temp)
             for child in self.node_con_return(temp):
                 if child not in _checked and not stack.inside(child):
-                    stack.add(child)
+                    stack.push(child)
             return self.dfs(final, stack, _checked)
     ## depth first serach using class Stack <--
