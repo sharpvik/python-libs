@@ -44,3 +44,33 @@ def fib(index):                 # index(int) -- position of number in fibonacci 
 def mod(x, y):                  # x(int) and y(int) -- any numbers
     return x - (x // y * y)
 ## modulo function
+
+
+
+## --> intersection function
+def intersect(x, y):            # s(list / set) and y(list / set) -- any two lists you want to get intersection of
+                                # --> function returns a set that contains the intersection of the lists you gave it
+    output = set()
+    for each in x:
+        if each in y:
+            output.add(each)
+    return output
+## intersection function <--
+
+
+
+## --> coprimes function
+def coprimes(n, p, q):         # n(int) = p * q -- any number that is a product of two primes; p(int) and q(int) -- prime factors of n;
+
+    def remover(a, i):          # *** internal use ***
+        c = 1
+        while i * c <= n:
+            try:
+                a.remove(i * c)
+            except ValueError:
+                pass
+            c += 1
+        return a
+
+    return remover( remover( list( range(1, n + 1) ), p ), q )
+## coprimes function <--
