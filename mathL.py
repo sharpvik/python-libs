@@ -56,3 +56,21 @@ def intersect(x, y):            # s(list / set) and y(list / set) -- any two lis
             output.add(each)
     return output
 ## intersection function <--
+
+
+
+## --> coprimes function
+def coprimes(n, p, q):         # n(int) = p * q -- any number that is a product of two primes; p(int) and q(int) -- prime factors of n;
+
+    def remover(a, i):          # *** internal use ***
+        c = 1
+        while i * c <= n:
+            try:
+                a.remove(i * c)
+            except ValueError:
+                pass
+            c += 1
+        return a
+
+    return remover( remover( list( range(1, n + 1) ), p ), q )
+## coprimes function <--

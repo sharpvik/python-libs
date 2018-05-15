@@ -5,7 +5,7 @@ from queueD import Queue
 
 # initialize node
 g = Graph()
-for n in range(97, 115):          # create nodes 'a' to 'g'
+for n in range(97, 115):          # create nodes 'a' to 'r'
     g.node_add( chr(n) )
 g.connection_add('a', 'b')
 g.connection_add('a', 'c')

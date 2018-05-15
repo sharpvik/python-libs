@@ -58,6 +58,7 @@ Here I will list all the files, functions inside them and their purposes so that
 + *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
 + *mod* --> returns the remainer of devision of two given numbers (x % y);
 + *intersect* --> returns the intersection of two given lists or sets;
++ *coprimes* --> returns coprimes of a given number;
 
 ### primes.py
 
