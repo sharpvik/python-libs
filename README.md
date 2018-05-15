@@ -43,7 +43,7 @@ Here I will list all the files, functions inside them and their purposes so that
 
 + *find* --> returns (a) list of divisors; (b) number of divisors; (c) sum of divisors of a given number;
 
-### graphC.py
+### graphD.py
 
 + *class Graph* --> class that may be used to create and interract with undirected graphs where edges don't have values (every edge is as good a path as any other edge);
 
@@ -56,6 +56,9 @@ Here I will list all the files, functions inside them and their purposes so that
 
 + *power* --> returns given number to the given positive power > 1;
 + *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
++ *mod* --> returns the remainer of devision of two given numbers (x % y);
++ *intersect* --> returns the intersection of two given lists or sets;
++ *coprimes* --> returns coprimes of a given number;
 
 ### primes.py
 
@@ -63,6 +66,10 @@ Here I will list all the files, functions inside them and their purposes so that
 + *find* --> returns list of prime numbers less than given limit;
 + *find_distincts* --> returns (a) list of distinct prime divisors; (b) sum of distinct prime divisors of a given number;
 + *find_prime_factors* --> returns list of prime factors of n;
+
+### queueD.py
+
++ *class Queue* --> implementation of Queue datatype;
 
 ### search.py
 
@@ -74,6 +81,10 @@ Here I will list all the files, functions inside them and their purposes so that
 + *insertion* --> returns sorted list of numbers;
 + *merge* --> returns sorted list of numbers;
 + *bubble* --> returns sorted list of numbers;
+
+### stackD.py
+
++ *class Stack* --> implementation of Stack datatype;
 
 ### stringD.py
 

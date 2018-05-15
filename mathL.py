@@ -13,7 +13,7 @@
 # functions
 
 ## --> power function
-def power(n, p):            # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
+def pow(n, p):                  # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
     if p == 0:
         return 1
     elif p == 1:
@@ -27,13 +27,50 @@ def power(n, p):            # n(int / float) -- any number; p(int) -- power of y
 
 
 ## --> fibonacci function
-def fibonacci(index):       # index(int) -- position of number in fibonacci sequence that you want to find;
-                            # --> function returns fibonacci number with given index if index is positive;
-                            # --> otherwise returns -1
+def fib(index):                 # index(int) -- position of number in fibonacci sequence that you want to find;
+                                # --> function returns fibonacci number with given index if index is positive;
+                                # --> otherwise returns -1
     if index < 0:
         return -1
     if index <= 1:
         return 1
     else:
-        return fibonacci(index - 1) + fibonacci(index - 2)
+        return fib(index - 1) + fib(index - 2)
 ## fibonacci function <--
+
+
+
+## --> modulo function
+def mod(x, y):                  # x(int) and y(int) -- any numbers
+    return x - (x // y * y)
+## modulo function
+
+
+
+## --> intersection function
+def intersect(x, y):            # s(list / set) and y(list / set) -- any two lists you want to get intersection of
+                                # --> function returns a set that contains the intersection of the lists you gave it
+    output = set()
+    for each in x:
+        if each in y:
+            output.add(each)
+    return output
+## intersection function <--
+
+
+
+## --> coprimes function
+def coprimes(n, p, q):         # n(int) = p * q -- any number that is a product of two primes; p(int) and q(int) -- prime factors of n;
+
+    def remover(a, i):          # *** internal use ***
+        c = 1
+        while i * c <= n:
+            try:
+                a.remove(i * c)
+            except ValueError:
+                pass
+            c += 1
+        return a
+
+    return remover( remover( list( range(1, n + 1) ), p ), q )
+## coprimes function <--
