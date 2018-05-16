@@ -71,7 +71,8 @@ Here I will list all the files, functions inside them and their purposes so that
 + *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
 + *mod* --> returns the remainder of division of two given numbers (x % y);
 + *intersect* --> returns the intersection of two given lists or sets;
-+ *coprimes* --> returns coprimes of a given number;
++ *coprimes* --> returns list of coprimes of a given number;
++ *gcd* --> returns greatest common divisor of two given numbers;
 
 ### primes.py
 

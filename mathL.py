@@ -60,7 +60,8 @@ def intersect(x, y):            # s(list / set) and y(list / set) -- any two lis
 
 
 ## --> coprimes function
-def coprimes(n, p, q):         # n(int) = p * q -- any number that is a product of two primes; p(int) and q(int) -- prime factors of n;
+def coprimes(n, p, q):          # n(int) = p * q -- any number that is a product of two primes; p(int) and q(int) -- prime factors of n;
+                                # --> function returns the list of coprimes of n;
 
     def remover(a, i):          # *** internal use ***
         c = 1
@@ -74,3 +75,11 @@ def coprimes(n, p, q):         # n(int) = p * q -- any number that is a product 
 
     return remover( remover( list( range(1, n + 1) ), p ), q )
 ## coprimes function <--
+
+
+
+## --> greatest common divisor function
+def gcd(a, b):                  # a(int) and b(int) -- any numbers;
+                                # --> function returns greatest common divisor of a and b;
+    return a if b == 0 else gcd(b, a % b)
+## greatest common divisor function <--
