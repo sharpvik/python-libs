@@ -64,7 +64,7 @@ class Graph:                                            # undirected graph; no v
             _checked.append(temp)
             for child in self.node_con_return(temp):
                 if child not in _checked and not queue.inside(child):
-                    queue.ins(child)
+                    queue.push(child)
             return self.bfs(final, queue, _checked)
     ## breadth first search using class Queue <--
 

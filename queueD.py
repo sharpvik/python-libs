@@ -5,7 +5,7 @@ class Queue:                                # standard queue datatype;
         else:
             self.storage = [element]
 
-    def ins(self, element):                 # element(int / str) -- element you want to insert into the Queue;
+    def push(self, element):                 # element(int / str) -- element you want to insert into the Queue;
                                             # --> function returns name of the inserted elment;
         self.storage.append(element)
         return element

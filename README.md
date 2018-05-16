@@ -56,6 +56,15 @@ Here I will list all the files, functions inside them and their purposes so that
 + *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
 + *present_in* --> returns True if element is present in the list given, otherwise returns False;
 
+### logates.py
+
++ *_not* --> returns the reverse of biary input;
++ *_and* --> returns 1 if both inputs were 1, otherwise returns 0;
++ *_or* --> returns 1 if either of two inputs were 1, otherwise returns 0;
++ *_xor* --> returns 1 if two inputs were different, otherwise returns 0;
+
+(Each of these methods work with inputs longer than one character, for example you can input 10010)
+
 ### mathL.py
 
 + *power* --> returns given number to the given positive power > 1;
