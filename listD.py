@@ -12,6 +12,7 @@
 
 # imports
 from random import randint
+from functools import reduce
 
 
 
@@ -38,3 +39,10 @@ def present_in(array, element):         # array(list) -- list that we want to ch
     else:
         return False
 ## present_in funciton <--
+
+
+
+## --> lsum function
+def lsum(array):
+    return reduce(lambda a, b: a + b, array)
+## lsum function <--
