@@ -83,3 +83,10 @@ def gcd(a, b):                  # a(int) and b(int) -- any numbers;
                                 # --> function returns greatest common divisor of a and b;
     return a if b == 0 else gcd(b, a % b)
 ## greatest common divisor function <--
+
+
+
+## --> floor function
+def floor(f):
+    return int(f) + 1 if f % int(f) >= 0.5 else int(f)
+## floor function <--

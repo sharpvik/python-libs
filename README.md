@@ -73,6 +73,7 @@ Here I will list all the files, functions inside them and their purposes so that
 + *intersect* --> returns the intersection of two given lists or sets;
 + *coprimes* --> returns list of coprimes of a given number;
 + *gcd* --> returns greatest common divisor of two given numbers;
++ *floor* --> returns rounded version of a given number (0.5 --> 1; 0.4 --> 0);
 
 ### primes.py
 
