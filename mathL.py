@@ -13,7 +13,7 @@
 # functions
 
 ## --> power function
-def pow(n, p):                  # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
+def power(n, p):                  # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
     if p == 0:
         return 1
     elif p == 1:
@@ -90,3 +90,13 @@ def gcd(a, b):                  # a(int) and b(int) -- any numbers;
 def floor(f):
     return int(f) + 1 if f % int(f) >= 0.5 else int(f)
 ## floor function <--
+
+
+
+## --> additorial fucntion
+def additorial(n):              # n(int) -- any positive number;
+                                # --> function returns sum of all numbers from one to n, including n itself;
+                                # example:  additorial(4) = 4 + 3 + 2 + 1 = 10
+                                # general formula: additorial(n) = n + n-1 + n-2 + ... + 1
+    return sum( list( range(n + 1) ) )
+## additorial function
