@@ -75,6 +75,7 @@ Here I will list all the files, functions inside them and their purposes so that
 + *gcd* --> returns greatest common divisor of two given numbers;
 + *floor* --> returns rounded version of a given number (0.5 --> 1; 0.4 --> 0);
 + *additorial* --> returns sum of all numbers below some given n, including n itself; additorial(3) = 3 + 2 + 1 = 6;
++ *divisible* --> returns True if n is divisible by d, otherwise returns False;
 
 ### primes.py
 

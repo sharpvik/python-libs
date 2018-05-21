@@ -100,3 +100,11 @@ def additorial(n):              # n(int) -- any positive number;
                                 # general formula: additorial(n) = n + n-1 + n-2 + ... + 1
     return sum( list( range(n + 1) ) )
 ## additorial function
+
+
+
+## --> divisible function
+def divisible(n, d):            # n(int / float) -- any number; d(int / float) -- any number;
+                                # --> function returns True if n is divisible by d, otherwise returns False;
+    return True if n % d == 0 else False
+## divisible function <--
