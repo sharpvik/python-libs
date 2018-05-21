@@ -17,7 +17,7 @@ class Stack:                                # standard stack datatype;
         else:
             self.storage = [element]
         
-    def push(self, element):                 # element(int / str) -- element you want to add into the Stack;
+    def push(self, element):                # element(int / str) -- element you want to add into the Stack;
                                             # --> function returns name of the added elment;
         self.storage.append(element)
         return element
@@ -26,6 +26,9 @@ class Stack:                                # standard stack datatype;
         temp = self.storage[-1]
         self.storage.pop(-1)
         return temp
+
+    def last(self):                          # --> function returns the last value pushed to the Stack;
+        return self.storage[-1]
 
     def length(self):                       # --> function returns number of elements in the Stack;
         return len(self.storage)
