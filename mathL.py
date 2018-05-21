@@ -13,7 +13,7 @@
 # functions
 
 ## --> power function
-def power(n, p):                  # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
+def power(n, p):                # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
     if p == 0:
         return 1
     elif p == 1:
