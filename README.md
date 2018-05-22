@@ -53,8 +53,8 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### listD.py
 
-+ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
-+ *present_in* --> returns True if element is present in the list given, otherwise returns False;
++ *unsorted* --> returns unsorted list of numbers of given size and given range;
++ *lsum* --> returns sum of a given list of numbers;
 
 ### logates.py
 
