@@ -27,7 +27,7 @@ class Stack:                                # standard stack datatype;
         self.storage.pop(-1)
         return temp
 
-    def last(self):                          # --> function returns the last value pushed to the Stack;
+    def last(self):                         # --> function returns the last value pushed to the Stack;
         return self.storage[-1]
 
     def length(self):                       # --> function returns number of elements in the Stack;
