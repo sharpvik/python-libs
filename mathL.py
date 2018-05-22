@@ -42,7 +42,7 @@ def fib(index):                 # index(int) -- position of number in fibonacci 
 
 ## --> modulo function
 def mod(x, y):                  # x(int) and y(int) -- any numbers
-    return x - (x // y * y)
+    return True if x - (x // y * y) == 0 else False
 ## modulo function
 
 

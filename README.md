@@ -69,7 +69,7 @@ Here I will list all the files, functions inside them and their purposes so that
 
 + *power* --> returns given number to the given positive power > 1;
 + *fib* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
-+ *mod* --> returns the remainder of division of two given numbers (x % y);
++ *mod* --> returns True if given x is divisivle by given y, otherwise returns False;
 + *intersect* --> returns the intersection of two given lists or sets;
 + *coprimes* --> returns list of coprimes of a given number;
 + *gcd* --> returns greatest common divisor of two given numbers;
