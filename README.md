@@ -68,7 +68,7 @@ Here I will list all the files, functions inside them and their purposes so that
 ### mathL.py
 
 + *power* --> returns given number to the given positive power > 1;
-+ *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
++ *fib* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
 + *mod* --> returns the remainder of division of two given numbers (x % y);
 + *intersect* --> returns the intersection of two given lists or sets;
 + *coprimes* --> returns list of coprimes of a given number;
