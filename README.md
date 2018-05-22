@@ -24,7 +24,7 @@ primes.check(13)
 
 ```python
 # Second method -- importing a specific function from the file
-from string import reverse
+from stringD import reverse
 reverse("Hello, world!")
 ```
 
