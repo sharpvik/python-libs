@@ -28,7 +28,8 @@ class Queue:                                # standard queue datatype;
         return temp
 
     def peek(self):                         # --> function returns the next value to be popped off of the Queue;
-        return self.storage[0]
+        try: return self.storage[0]
+        except IndexError: pass
     
     def length(self):                       # --> function returns number of elements in the Queue;
         return len(self.storage)

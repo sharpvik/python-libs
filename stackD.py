@@ -1,21 +1,6 @@
-#
-# =================================         BBBBBB      YY    YYY           MMMM    MMMM    RRRRRR              VV      VVV    RRRRRR
-# =             THE               =         BBB   BB     YY  YYY            MMMMM  MMMMM    RRR   RR             VV    VVV     RRR   RR
-# ===>       Stack class       <===         BBBBBB        YYYYY             MMM  MM  MMM    RRRRRR                VV  VVV      RRRRRR
-# =          (10.05.2018)         =         BBB   BBB      YYY              MMM      MMM    RRR  R                 VVVVV       RRR  R
-# =================================         BBBBBBBB       YYY              MMM      MMM    RRR   RR                VVV        RRR   RR
-#
-# My gitgub --> https://www.github.com/sharpvik <--
-#
-
-
-
 class Stack:                                # standard stack datatype;
     def __init__(self, element=None):
-        if isinstance(element, list):
-            self.storage = element
-        else:
-            self.storage = [element]
+        self.storage = list()
         
     def push(self, element):                # element(int / str) -- element you want to add into the Stack;
                                             # --> function returns name of the added elment;
@@ -28,7 +13,8 @@ class Stack:                                # standard stack datatype;
         return temp
 
     def peek(self):                         # --> function returns the last value pushed to the Stack;
-        return self.storage[-1]
+        try: return self.storage[-1]
+        except IndexError: pass
 
     def length(self):                       # --> function returns number of elements in the Stack;
         return len(self.storage)
