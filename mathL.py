@@ -42,7 +42,7 @@ def fib(index):                 # index(int) -- position of number in fibonacci 
 
 ## --> modulo function
 def mod(x, y):                  # x(int) and y(int) -- any numbers
-    return True if x - (x // y * y) == 0 else False
+    return x - (x // y * y) == 0
 ## modulo function
 
 
@@ -106,5 +106,5 @@ def additorial(n):              # n(int) -- any positive number;
 ## --> divisible function
 def divisible(n, d):            # n(int / float) -- any number; d(int / float) -- any number;
                                 # --> function returns True if n is divisible by d, otherwise returns False;
-    return True if n % d == 0 else False
+    return n % d == 0
 ## divisible function <--
