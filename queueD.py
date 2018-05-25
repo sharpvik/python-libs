@@ -26,9 +26,15 @@ class Queue:                                # standard queue datatype;
         temp = self.storage[0]
         self.storage.pop(0)
         return temp
+
+    def peek(self):                         # --> function returns the next value to be popped off of the Queue;
+        return self.storage[0]
     
     def length(self):                       # --> function returns number of elements in the Queue;
         return len(self.storage)
+
+    def is_empty(self):                     # --> function returns True if Queue is empty, otherwise, returns False;
+        return self.length() == 0
 
     def inside(self, element):              # element(int / str) -- name of element you want to check for;
                                             # --> function returs True if element is in the Queue, otherwise, returns False;

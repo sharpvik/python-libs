@@ -27,11 +27,14 @@ class Stack:                                # standard stack datatype;
         self.storage.pop(-1)
         return temp
 
-    def last(self):                         # --> function returns the last value pushed to the Stack;
+    def peek(self):                         # --> function returns the last value pushed to the Stack;
         return self.storage[-1]
 
     def length(self):                       # --> function returns number of elements in the Stack;
         return len(self.storage)
+
+    def is_empty(self):                     # --> function returns True if Stack is empty, otherwise, returns False;
+        return self.length() == 0
 
     def inside(self, element):              # element(int / str) -- name of element you want to check for;
                                             # --> function returs True if element is in the Stack, otherwise, returns False;
