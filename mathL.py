@@ -12,20 +12,6 @@
 
 # functions
 
-## --> power function
-def power(n, p):                # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
-    if p == 0:
-        return 1
-    elif p == 1:
-        return n
-    elif p == 2:
-        return n * n
-    else:
-        return pow(n, p // 2) * pow(n, p - p // 2)
-## power function <--
-
-
-
 ## --> fibonacci function
 def fib(index):                 # index(int) -- position of number in fibonacci sequence that you want to find;
                                 # --> function returns fibonacci number with given index if index is positive;

@@ -14,10 +14,17 @@
 
 ## --> factorial function
 def factorial(n):   # n(int) -- any positive number; --> function returns n!;
-    if n > 1:
-        return factorial(n - 1) * n
-    else:
+    if not isinstance(n, int):
+        raise ValueError("factorial() arg must be of type int")
+    elif n < 0:
+        raise ValueError("factorial() arg must be a positive number")
+    elif n < 2:
         return 1
+    else:
+        f = 1
+        for i in range(1, n + 1):
+            f *= i
+        return f
 ## factorial function <--
 
 
