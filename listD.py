@@ -19,10 +19,16 @@ from functools import reduce
 # functions
 
 ## --> unsorted function
-def unsorted(length, low, high):        # length(int) -- number of elements you want to get; 
-                                        # low(int) and high(int) -- limits for the generation of numeric elements; 
-                                        # --> function returns unsorted list of numbers;
-    return [ randint(low, high) for i in range(0, length) ]
+def unsorted(length, low, high, format="list"): # length(int) -- number of elements you want to get; 
+                                                # low(int) and high(int) -- limits for the generation of numeric elements; 
+                                                # --> function returns unsorted list of numbers;
+    lst = [ randint(low, high) for i in range(0, length) ]
+    if format == "list":
+        return lst
+    else:
+        for each in lst: 
+            print(each, end=" ")
+        print()
 ## unsorted function <--
 
 
