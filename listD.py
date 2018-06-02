@@ -21,6 +21,7 @@ from functools import reduce
 ## --> unsorted function
 def unsorted(length, low, high, format="list"): # length(int) -- number of elements you want to get; 
                                                 # low(int) and high(int) -- limits for the generation of numeric elements; 
+                                                # format(str) -- format of output (be default set to "list");
                                                 # --> function returns unsorted list of numbers;
     lst = [ randint(low, high) for i in range(0, length) ]
     if format == "list":

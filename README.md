@@ -106,6 +106,7 @@ Here I will list all the files, functions inside them and their purposes so that
 ### stringD.py
 
 + *reverse* --> returns reversed string;
++ *remove_repeats* --> returns string without repititions;
 
 ## Contact
 
