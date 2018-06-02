@@ -17,3 +17,6 @@ def reverse(string):        # string(str) -- any string; --> function returns re
     for i in range( len(string) - 1, -1, -1 ):
         output += string[i]
     return output
+
+def remove_repeats(string): 
+    return ''.join( set(string) )
