@@ -24,7 +24,7 @@ primes.check(13)
 
 ```python
 # Second method -- importing a specific function from the file
-from string import reverse
+from stringD import reverse
 reverse("Hello, world!")
 ```
 
@@ -53,8 +53,8 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### listD.py
 
-+ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
-+ *present_in* --> returns True if element is present in the list given, otherwise returns False;
++ *unsorted* --> returns unsorted list of numbers of given size and given range;
++ *lsum* --> returns sum of a given list of numbers;
 
 ### logates.py
 
@@ -68,8 +68,8 @@ Here I will list all the files, functions inside them and their purposes so that
 ### mathL.py
 
 + *power* --> returns given number to the given positive power > 1;
-+ *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
-+ *mod* --> returns the remainder of division of two given numbers (x % y);
++ *fib* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
++ *mod* --> returns True if given x is divisivle by given y, otherwise returns False;
 + *intersect* --> returns the intersection of two given lists or sets;
 + *coprimes* --> returns list of coprimes of a given number;
 + *gcd* --> returns greatest common divisor of two given numbers;
@@ -106,6 +106,7 @@ Here I will list all the files, functions inside them and their purposes so that
 ### stringD.py
 
 + *reverse* --> returns reversed string;
++ *remove_repeats* --> returns string without repititions;
 
 ## Contact
 

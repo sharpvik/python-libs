@@ -12,20 +12,6 @@
 
 # functions
 
-## --> power function
-def power(n, p):                # n(int / float) -- any number; p(int) -- power of your number has to be >= 1
-    if p == 0:
-        return 1
-    elif p == 1:
-        return n
-    elif p == 2:
-        return n * n
-    else:
-        return pow(n, p // 2) * pow(n, p - p // 2)
-## power function <--
-
-
-
 ## --> fibonacci function
 def fib(index):                 # index(int) -- position of number in fibonacci sequence that you want to find;
                                 # --> function returns fibonacci number with given index if index is positive;
@@ -42,7 +28,7 @@ def fib(index):                 # index(int) -- position of number in fibonacci 
 
 ## --> modulo function
 def mod(x, y):                  # x(int) and y(int) -- any numbers
-    return x - (x // y * y)
+    return x - (x // y * y) == 0
 ## modulo function
 
 
@@ -100,11 +86,3 @@ def additorial(n):              # n(int) -- any positive number;
                                 # general formula: additorial(n) = n + n-1 + n-2 + ... + 1
     return sum( list( range(n + 1) ) )
 ## additorial function
-
-
-
-## --> divisible function
-def divisible(n, d):            # n(int / float) -- any number; d(int / float) -- any number;
-                                # --> function returns True if n is divisible by d, otherwise returns False;
-    return True if n % d == 0 else False
-## divisible function <--
