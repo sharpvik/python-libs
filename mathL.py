@@ -85,4 +85,19 @@ def additorial(n):              # n(int) -- any positive number;
                                 # example:  additorial(4) = 4 + 3 + 2 + 1 = 10
                                 # general formula: additorial(n) = n + n-1 + n-2 + ... + 1
     return sum( list( range(n + 1) ) )
-## additorial function
+## additorial function <--
+
+
+
+## --> power function ( logarithmic complexity )
+def power(n, x):
+    if x == 0: return 1
+    if x == 1: return n 
+    count = 1
+    current = n;
+    while count * 2 < x:
+        current *= current
+        count *= 2
+    for i in range(x - count): current *= n
+    return current
+## power function <--
