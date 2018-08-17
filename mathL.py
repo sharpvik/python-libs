@@ -94,7 +94,7 @@ def power(n, x):
     if x == 0: return 1
     if x == 1: return n 
     count = 1
-    current = n;
+    current = n
     while count * 2 < x:
         current *= current
         count *= 2
