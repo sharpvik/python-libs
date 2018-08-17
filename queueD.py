@@ -12,12 +12,14 @@
 
 class Queue:                                # standard queue datatype;
     def __init__(self, element=None):
-        if isinstance(element, list):
+        if isinstance(element, None):
+            self.storage = list()
+        elif isinstance(element, list):
             self.storage = element
         else:
             self.storage = [element]
 
-    def push(self, element):                 # element(int / str) -- element you want to insert into the Queue;
+    def push(self, element):                # element(int / str) -- element you want to insert into the Queue;
                                             # --> function returns name of the inserted elment;
         self.storage.append(element)
         return element
