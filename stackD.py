@@ -1,6 +1,9 @@
 class Stack:                                # standard stack datatype;
     def __init__(self, element=None):
         self.storage = list()
+
+    def __len__(self):                      # --> function returns number of elements in the Stack;
+        return len(self.storage)
         
     def push(self, element):                # element(int / str) -- element you want to add into the Stack;
                                             # --> function returns name of the added elment;
@@ -16,12 +19,9 @@ class Stack:                                # standard stack datatype;
         try: return self.storage[-1]
         except IndexError: pass
 
-    def length(self):                       # --> function returns number of elements in the Stack;
-        return len(self.storage)
+    def empty(self):                        # --> function returns True if Stack is empty, otherwise, returns False;
+        return self.__len__() == 0
 
-    def is_empty(self):                     # --> function returns True if Stack is empty, otherwise, returns False;
-        return self.length() == 0
-
-    def inside(self, element):              # element(int / str) -- name of element you want to check for;
+    def has(self, element):                 # element(int / str) -- name of element you want to check for;
                                             # --> function returs True if element is in the Stack, otherwise, returns False;
         return element in self.storage
