@@ -96,7 +96,8 @@ def additorial(n):              # n(int) -- any positive number;
 
 
 ## --> power function ( logarithmic complexity )
-def power(n, x):
+def power(n, x):				# n(int) and x(int) -- any positive number;
+								# --> function returns n to the power of x;
     if x == 0: return 1
     if x == 1: return n 
     count = 1
@@ -111,7 +112,8 @@ def power(n, x):
 
 
 ## --> divisors function
-def divisors(n):
+def divisors(n):				# n(int) -- any positive number;
+								# --> function returns all proper divisors of n (excluding n);
 	out = set()
 	for i in range(1, n // 2 + 1):
 		if i not in out and n % i == 0:
