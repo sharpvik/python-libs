@@ -10,6 +10,12 @@
 
 
 
+# variables
+
+pi = 3.1415926535897932384626433832795028841971693993751
+
+
+
 # functions
 
 ## --> fibonacci function
@@ -101,3 +107,16 @@ def power(n, x):
     for i in range(x - count): current *= n
     return current
 ## power function <--
+
+
+
+## --> divisors function
+def divisors(n):
+	out = set()
+	for i in range(1, n // 2 + 1):
+		if i not in out and n % i == 0:
+			out.add(i)
+			out.add(n // i)
+	out.remove(n)
+	return out
+## divisors function <--
