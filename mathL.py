@@ -95,22 +95,6 @@ def additorial(n):              # n(int) -- any positive number;
 
 
 
-## --> power function ( logarithmic complexity )
-def power(n, x):				# n(int) and x(int) -- any positive number;
-								# --> function returns n to the power of x;
-    if x == 0: return 1
-    if x == 1: return n 
-    count = 1
-    current = n
-    while count * 2 < x:
-        current *= current
-        count *= 2
-    for i in range(x - count): current *= n
-    return current
-## power function <--
-
-
-
 ## --> divisors function
 def divisors(n):				# n(int) -- any positive number;
 								# --> function returns all proper divisors of n (excluding n);
@@ -122,3 +106,71 @@ def divisors(n):				# n(int) -- any positive number;
 	out.remove(n)
 	return out
 ## divisors function <--
+
+
+
+## --> matrix addition function
+def matadd(m, n):				# m(matrix) and n(matrix) -- any 2 matrices with the same dimentions;
+								# --> function returns sum of two matrices;
+	out = list(m)
+	for y in range( len(m) ):
+		for x in range( len(m[y]) ):
+			out[y][x] = m[y][x] + n[y][x]
+	return out
+## matrix addition function <--
+
+
+
+## --> matrix by number multiplication function
+def matnmul(m, n):				# m(matrix) and n(int / float) -- any matrix and any number;
+								# --> function returns the result of multiplying matrix m by some number n;
+	out = list(m)
+	for y in range( len(m) ):
+		for x in range( len(m[y]) ):
+			out[y][x] = m[y][x] * n
+	return out
+## matrix by number multiplication function <--
+	
+
+
+## --> matrix multiplication function
+def matmul(m, n):				# m(matrix) and n(matrix) -- any matrix;
+								# --> function returns the result of multiplying matrix m by matrix n;
+    out = list(m)
+    for y in range( len(m) ):
+    	for x in range( len(m[y]) ):
+    		out[y][x] = sum([ m[y][i] * n[i][x] for i in range( len(m[y] ) ) ])
+    return out
+## matrix multiplication function <--
+
+
+
+## --> matrix minor function
+def minor(m, i, j):             # m(matrix), i(int), j(int) -- any matrix and indeces;
+                                # --> function returns the minor of the given matrix;
+    out = list()
+    for y in range( len(m) ):
+        if y != i:
+            out.append( list() )
+            for x in range( len(m[0]) ):
+                if x != j:
+                    out[-1].append(m[y][x])
+    return out
+## matrix minor function <--
+
+
+
+## --> matrix determinant function
+def det(m):						# m(matrix) -- any matrix;
+								# --> function returns a determinant of the given matrix;
+    m = list(m)
+    row = m[0]
+    if len(row) == 1:
+        return row[0]
+    sign = 1
+    arr = list()
+    for j in range( len(row) ):
+        arr.append( sign * row[j] * det( minor(m, 0, j) ) )
+        sign *= -1
+    return sum(arr)
+## matrix determinant function <--
