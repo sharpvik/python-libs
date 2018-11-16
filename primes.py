@@ -34,19 +34,6 @@ def check(n):                           # n(int) -- any positive number; --> fun
 
 
 
-## --> search for primes forever
-def forever(): 
-    file = open("primes.txt", "a+")             # creates a .txt file called "primes.txt";
-    n = 2                                       # start with number 2;
-    while True:                                 # infinitely do the following:
-        if check(n):                            # check if current number is a prime;
-            file.write( "{}\n".format(n) )      # if True, append it into the file;
-        n += 1                                  # move on to the next number;
-    file.close()                                # this line technically never fires since the loop is infinite, it's just a good tone;
-## search for primes forever <--
-
-
-
 ## --> find primes within a limit
 def find(limit):                                        # limit(int) -- any positive number; --> function returns list of primes;
     working = []

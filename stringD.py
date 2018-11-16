@@ -12,16 +12,6 @@
 
 # functions
 
-# --> reverse funcion
-def reverse(string):            # string(str) -- any string; --> function returns reversed string;
-    output = str()
-    for i in range( len(string) - 1, -1, -1 ):
-        output += string[i]
-    return output
-# reverse funciton <--
-
-
-
 # --> remove_repeats function
 def remove_repeats(string):     # string(str) -- any string; 
                                 # --> function returns given string without repititions;

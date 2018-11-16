@@ -31,10 +31,3 @@ def unsorted(length, low, high, format="list"): # length(int) -- number of eleme
             print(each, end=" ")
         print()
 ## unsorted function <--
-
-
-
-## --> lsum function
-def lsum(array):                        # array(list of int / float) -- list of numbers that you want to sum;
-    return reduce(lambda a, b: a + b, array)
-## lsum function <--

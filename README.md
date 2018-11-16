@@ -39,10 +39,6 @@ Here I will list all the files, functions inside them and their purposes so that
 + *nCr* --> returns number of combinations of n elements for r positions;
 + *anagram* --> returns list of every possible arrangement of a given string;
 
-### divisors.py
-
-+ *find* --> returns (a) list of divisors; (b) number of divisors; (c) sum of divisors of a given number;
-
 ### fistD.py
 
 + *class Fist* --> class that may be used to create and interact with final state machines that use binary-based input (string consisting of 0s and 1s);
@@ -54,7 +50,6 @@ Here I will list all the files, functions inside them and their purposes so that
 ### listD.py
 
 + *unsorted* --> returns unsorted list of numbers of given size and given range;
-+ *lsum* --> returns sum of a given list of numbers;
 
 ### logates.py
 
@@ -63,7 +58,7 @@ Here I will list all the files, functions inside them and their purposes so that
 + *_or* --> returns 1 if either of two inputs were 1, otherwise returns 0;
 + *_xor* --> returns 1 if two inputs were different, otherwise returns 0;
 
-(Each of these methods work with inputs longer than one character, for example you can input 10010)
+(Each of these methods works with inputs longer than one character; for example, you can input 10010)
 
 ### mathL.py
 
@@ -89,6 +84,10 @@ Here I will list all the files, functions inside them and their purposes so that
 + *find_distincts* --> returns (a) list of distinct prime divisors; (b) sum of distinct prime divisors of a given number;
 + *find_prime_factors* --> returns list of prime factors of n;
 
+### priorqD.py
+
++ *class PriorQ* --> implementation of Priority Queue datatype;
+
 ### queueD.py
 
 + *class Queue* --> implementation of Queue datatype;
@@ -110,7 +109,6 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### stringD.py
 
-+ *reverse* --> returns reversed string;
 + *remove_repeats* --> returns string without repetitions;
 
 ## Contact
