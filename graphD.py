@@ -5,7 +5,7 @@
 # =        (10.05.2018)         =         BBB   BBB      YYY              MMM      MMM    RRR  R                 VVVVV       RRR  R
 # ===============================         BBBBBBBB       YYY              MMM      MMM    RRR   RR                VVV        RRR   RR
 #
-# My gitgub --> https://www.github.com/sharpvik <--
+# My github --> https://www.github.com/sharpvik <--
 #
 
 
@@ -67,7 +67,7 @@ class Graph:                                            # undirected graph; no v
                                                                     # checked(list) -- leave empty *** internal use ***;
                                                                     # --> function returns True if the two nodes are connected, otherwise it returns False;
         _checked = list(checked)
-        if queue.length() == 0:
+        if queue.is_empty():
             return False
         temp = queue.pop()
         if temp == final:
@@ -86,7 +86,7 @@ class Graph:                                            # undirected graph; no v
                                                                     # checked(list) -- leave empty *** internal use ***;
                                                                     # --> function returns True if the two nodes are connected, otherwise it returns False;
         _checked = list(checked)
-        if stack.length() == 0:
+        if stack.is_empty():
             return False
         temp = stack.pop()
         if temp == final:

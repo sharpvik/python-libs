@@ -4,7 +4,7 @@
 
 These are just some of the functions that I wrote myself. I didn't write them for external use. I know that there are precompiled binary subroutines in Python that work thousands times faster. I wanted to write these basic functions myself just to prove that I can. That's all.
 
-There's one thing however, that I like about these functions -- since they are open source, you can easily see how they work and **customize them** for your own puroses.
+There's one thing however, that I like about these functions -- since they are open source, you can easily see how they work and **customize them** for your own purposes.
 
 ## Python Modules Applied
 
@@ -24,7 +24,7 @@ primes.check(13)
 
 ```python
 # Second method -- importing a specific function from the file
-from string import reverse
+from stringD import reverse
 reverse("Hello, world!")
 ```
 
@@ -45,20 +45,20 @@ Here I will list all the files, functions inside them and their purposes so that
 
 ### fistD.py
 
-+ *class Fist* --> class that may be used to create and interract with final state machines that use binary-based input (string consisting of 0s and 1s);
++ *class Fist* --> class that may be used to create and interact with final state machines that use binary-based input (string consisting of 0s and 1s);
 
 ### graphD.py
 
-+ *class Graph* --> class that may be used to create and interract with undirected graphs where edges don't have values (every edge is as good a path as any other edge);
++ *class Graph* --> class that may be used to create and interact with undirected graphs where edges don't have values (every edge is as good a path as any other edge);
 
 ### listD.py
 
-+ *unsorted* --> returns unsorted array of numbers of given size and given range for numbers' generation;
-+ *present_in* --> returns True if element is present in the list given, otherwise returns False;
++ *unsorted* --> returns unsorted list of numbers of given size and given range;
++ *lsum* --> returns sum of a given list of numbers;
 
 ### logates.py
 
-+ *_not* --> returns the reverse of biary input;
++ *_not* --> returns the reverse of binary input;
 + *_and* --> returns 1 if both inputs were 1, otherwise returns 0;
 + *_or* --> returns 1 if either of two inputs were 1, otherwise returns 0;
 + *_xor* --> returns 1 if two inputs were different, otherwise returns 0;
@@ -68,12 +68,19 @@ Here I will list all the files, functions inside them and their purposes so that
 ### mathL.py
 
 + *power* --> returns given number to the given positive power > 1;
-+ *fibonacci* --> returns i-th number from fibonacci sequence if i is positive, otherwise returns -1;
-+ *mod* --> returns the remainder of division of two given numbers (x % y);
++ *fib* --> returns i-th number from Fibonacci sequence if i is positive, otherwise returns -1;
++ *mod* --> returns True if given x is divisible by given y, otherwise returns False;
 + *intersect* --> returns the intersection of two given lists or sets;
 + *coprimes* --> returns list of coprimes of a given number;
 + *gcd* --> returns greatest common divisor of two given numbers;
 + *floor* --> returns rounded version of a given number (0.5 --> 1; 0.4 --> 0);
++ *additorial* --> returns sum of all numbers below some given n, including n itself; additorial(3) = 3 + 2 + 1 = 6;
++ *divisors* --> returns all proper divisors of n (excluding n);
++ *matadd* --> returns sum of two given matrices;
++ *matnmul* --> returns the result of multiplying matrix m by some number n;
++ *matmul* --> returns the result of multiplying matrix m by matrix n;
++ *minor* --> returns the minor of the given matrix;
+* *det* --> returns a determinant of the given matrix;
 
 ### primes.py
 
@@ -104,6 +111,7 @@ Here I will list all the files, functions inside them and their purposes so that
 ### stringD.py
 
 + *reverse* --> returns reversed string;
++ *remove_repeats* --> returns string without repetitions;
 
 ## Contact
 

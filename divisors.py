@@ -5,7 +5,7 @@
 # =           (26.04.2018)           =         BBB   BBB      YYY              MMM      MMM    RRR  R                 VVVVV       RRR  R
 # ====================================         BBBBBBBB       YYY              MMM      MMM    RRR   RR                VVV        RRR   RR
 #
-# My gitgub --> https://www.github.com/sharpvik <--
+# My github --> https://www.github.com/sharpvik <--
 #
 
 
