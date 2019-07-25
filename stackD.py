@@ -1,6 +1,6 @@
 class Stack:                                # standard stack datatype;
     def __init__(self, element=None):
-        if isinstance(element, None):
+        if element is None:
             self.storage = list()
         elif isinstance(element, list):
             self.storage = element
